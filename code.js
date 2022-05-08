@@ -5,7 +5,6 @@ let playerSelection = ''
 function playerChoice(){
     select = prompt('Rock, Paper, or Scissors?')
     if (choices.includes(select)){
-        console.log(select)
         return playerSelection = select
     }
     else {
@@ -24,6 +23,7 @@ function play(playerSelection, compSelection){
        }
        else if (compSelection == "Rock"){
            return "It's a draw!"
+           
        }
        else {
            return "You loose!"
@@ -45,6 +45,7 @@ function play(playerSelection, compSelection){
     else {
         if (compSelection == "Scissors"){
             return "It's a draw!"
+            
        }
        else if (compSelection == "Rock"){
            return "You win!"
@@ -53,5 +54,17 @@ function play(playerSelection, compSelection){
            return "It's a draw!"
        }
         console.log('scissors')
-    }    
+    }
+}    
+function round(){
+    console.log('1')
+    playerSelection = playerChoice()
+    console.log(playerSelection)
+    compSelection = computerPlay()
+    console.log(compSelection)
+    let win = play(playerSelection, compSelection)
+    window.alert(win)
+    console.log('4')
 }
+
+
