@@ -18,9 +18,23 @@ function computerPlay(){
 
 function play(playerSelection, compSelection){
     if (playerSelection == "Rock"){
-        if (compSelection == "Scissors"){
-            return "You win!"
+        if (compSelection == "Scissors") return "You win"
+        if (compSelection == "Rock") return "It's a draw!"
+        return "You loose!"        
+        }
+    if (playerSelection == "Paper"){
+        if (compSelection == "Scissors") return "You loose!"
+        if (compSelection == "Rock") return "You win!"
+        return "It's a draw!"
        }
+<<<<<<< HEAD
+    if (playerSelection == 'Scissors'){
+        if (compSelection == "Scissors") return "It's a draw!"
+        if (compSelection == "Rock") return "You loose!"
+        return "You win!"
+       }
+}    
+=======
        else if (compSelection == "Rock"){
            return "It's a draw!"
            
@@ -68,3 +82,4 @@ function round(){
 }
 
 
+>>>>>>> 2149fd575473fefd1df3d02bb62fbca299534a03
