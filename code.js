@@ -4,12 +4,9 @@ let playerSelection = ''
 
 function playerChoice(){
     select = prompt('Rock, Paper, or Scissors?')
-    if (choices.includes(select)){
-        return playerSelection = select
-    }
-    else {
-        playerChoice()
-    }
+    if (choices.includes(select)) return playerSelection = select
+    playerChoice()
+    
 }
 function computerPlay(){
     let random = choices[Math.floor(Math.random() * 3)];
