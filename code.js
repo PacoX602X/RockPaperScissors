@@ -27,49 +27,13 @@ function play(playerSelection, compSelection){
         if (compSelection == "Rock") return "You win!"
         return "It's a draw!"
        }
-<<<<<<< HEAD
     if (playerSelection == 'Scissors'){
         if (compSelection == "Scissors") return "It's a draw!"
         if (compSelection == "Rock") return "You loose!"
         return "You win!"
        }
 }    
-=======
-       else if (compSelection == "Rock"){
-           return "It's a draw!"
-           
-       }
-       else {
-           return "You loose!"
-       }
-        console.log('rock')
-    }
-    else if (playerSelection == "Paper"){
-        if (compSelection == "Scissors"){
-            return "You loose!"
-       }
-       else if (compSelection == "Rock"){
-           return "You win!"
-       }
-       else {
-           return "It's a draw!"
-       }
-        console.log('paper')
-    }
-    else {
-        if (compSelection == "Scissors"){
-            return "It's a draw!"
-            
-       }
-       else if (compSelection == "Rock"){
-           return "You win!"
-       }
-       else {
-           return "It's a draw!"
-       }
-        console.log('scissors')
-    }
-}    
+         
 function round(){
     console.log('1')
     playerSelection = playerChoice()
@@ -82,4 +46,3 @@ function round(){
 }
 
 
->>>>>>> 2149fd575473fefd1df3d02bb62fbca299534a03
