@@ -4,6 +4,7 @@ let playerSelection = ''
 
 function playerChoice(){
     select = prompt('Rock, Paper, or Scissors?')
+    select = select[0].toUpperCase() + select.slice(1).toLowerCase()
     if (choices.includes(select)) return playerSelection = select
     playerChoice()
     
