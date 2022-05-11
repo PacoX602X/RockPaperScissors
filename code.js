@@ -1,6 +1,8 @@
 var choices = ["Rock", "Paper", "Scissors"]
 let compSelection = ''
 let playerSelection = ''
+let winner = ''
+
 
 function playerChoice(){
     select = prompt('Rock, Paper, or Scissors?')
@@ -16,7 +18,7 @@ function computerPlay(){
 
 function play(playerSelection, compSelection){
     if (playerSelection == "Rock"){
-        if (compSelection == "Scissors") return "You win"
+        if (compSelection == "Scissors") return "You win!"
         if (compSelection == "Rock") return "It's a draw!"
         return "You loose!"        
         }
@@ -33,14 +35,24 @@ function play(playerSelection, compSelection){
 }    
          
 function round(){
-    console.log('1')
     playerSelection = playerChoice()
-    console.log(playerSelection)
     compSelection = computerPlay()
-    console.log(compSelection)
     let win = play(playerSelection, compSelection)
     window.alert(win)
-    console.log('4')
+    return winner = win
 }
 
+function game(){
+    let playerScore = 0
+    let computerScore = 0
+    for (let i = 0; i < 5; i++){
+    round()
+    if (winner == 'You win!') playerScore++ 
+    if (winner == 'You loose!') computerScore++
+    }
+    if (playerScore > computerScore) return 'You won the match!'
+    if (playerScore == computerScore) return 'Its a tie!'
+    if (playerScore < computerScore) return 'You lost the match'
+    
+}
 
